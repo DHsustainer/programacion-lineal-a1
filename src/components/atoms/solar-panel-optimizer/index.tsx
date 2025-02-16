@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -38,7 +39,7 @@ const SolarPanelOptimizer = () => {
     }
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setConstraints(prev => ({
       ...prev,
