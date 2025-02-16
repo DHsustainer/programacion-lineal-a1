@@ -1,0 +1,19 @@
+services:
+  gestionacuerdos-app:
+    build: .
+    volumes:
+      - app_data:/app/.next/cache  # Específico para caché de Next.js
+    ports:
+      - "3004:3000"
+    environment:
+      # Variables de Next.js y Auth
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - AUTH_SECRET=${AUTH_SECRET}
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+      - NEXT_PUBLIC_GROQ_API_KEY=${NEXT_PUBLIC_GROQ_API_KEY}
+      # Variables de entorno de Node
+      - NODE_ENV=production
+      - NODE_VERSION=20  # Next.js 15 requiere Node.js 20.x
+
+volumes:
+  app_data:
