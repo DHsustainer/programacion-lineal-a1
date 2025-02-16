@@ -106,7 +106,7 @@ const SolarPanelOptimizer = () => {
         <CardHeader>
           <CardTitle>Optimizador de Producción de Paneles Solares</CardTitle>
           <CardDescription>
-            Optimize la producción considerando restricciones de materiales, trabajo y emisiones
+          Optimize la producción considerando restricciones de materiales, trabajo y emisiones de CO2.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
