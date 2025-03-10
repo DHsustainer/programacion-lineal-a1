@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { OptimizationData } from '@/types'
 import {
 	formatCurrency,
 	formatPercent,
@@ -9,13 +9,9 @@ import { Progress } from '@/components/ui/progress'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { ChartPie, Scale, TrendingUp } from 'lucide-react'
 
-interface OptimizationResultsProps {
-	data: OptimizationData
-}
-
 export default function OptimizationResults({
 	data
-}: OptimizationResultsProps) {
+}: any) {
 	if (!data || !data.result || !data.result.optimalSolution) {
 		return (
 			<Card>

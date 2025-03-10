@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState } from 'react'
-import { InvestmentFormData, OptimizationData } from '@/types'
+import { OptimizationData } from '@/types'
 import { solveInvestmentProblem } from '@/lib/optimizer'
 import { AlertCircle } from 'lucide-react'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -16,7 +17,7 @@ export default function Home() {
 	const [loading, setLoading] = useState<boolean>(false)
 	const [error, setError] = useState<string | null>(null)
 
-	const handleOptimize = (formData: InvestmentFormData) => {
+	const handleOptimize = (formData: any) => {
 		setLoading(true)
 		setError(null)
 

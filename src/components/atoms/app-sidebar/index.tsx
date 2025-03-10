@@ -23,6 +23,11 @@ const items = [
 		title: 'Actividad 2',
 		url: '/optimizer-invest',
 		icon: ChartCandlestick
+	},
+	{
+		title: 'Actividad 3',
+		url: '/resource-optimizer',
+		icon: ChartCandlestick
 	}
 ]
 
