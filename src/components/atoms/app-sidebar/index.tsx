@@ -1,4 +1,4 @@
-import { ChartCandlestick, SquareMenu } from 'lucide-react'
+import { ChartCandlestick, Cone, SquareMenu } from 'lucide-react'
 
 import {
 	Sidebar,
@@ -28,6 +28,11 @@ const items = [
 		title: 'Actividad 3',
 		url: '/resource-optimizer',
 		icon: ChartCandlestick
+	},
+	{
+		title: 'Simulación',
+		url: '/optimizer-tool',
+		icon: Cone
 	}
 ]
 
